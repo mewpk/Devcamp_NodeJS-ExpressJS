@@ -10,7 +10,7 @@ app.use((req,res)=>{
     res.type("text/plain");
     res.status(404)
     res.send("404 - Not Found")
-    console.log(req.os)
+    console.log(req)
 })
 
 
