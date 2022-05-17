@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export default function Layout() {
 
-    axios.get('https://reqres.in/api/users').then((response) => {
+    axios.get('http://localhost:3000/api/users').then((response) => {
         const aUser = response.data.data;
         let str = '';
         for (let i = 0; i < aUser.length; i++) {
@@ -28,6 +28,7 @@ export default function Layout() {
                 </div>
             </div>
         </div>
+
 
     )
 }
